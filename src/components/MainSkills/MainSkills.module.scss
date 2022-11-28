@@ -1,0 +1,14 @@
+@import '../../styles/_colors.scss';
+
+.skills {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.skill {
+  background-color: $base-color;
+  color: white;
+  margin: 0 5px 10px 0;
+  padding: 5px 15px;
+  border-radius: 8px;
+}
