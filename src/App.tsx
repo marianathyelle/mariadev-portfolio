@@ -1,10 +1,13 @@
-import './App.scss'
 import Header from './components/Header/Header'
+import AboutSection from './components/AboutSection/AboutSection'
+
+import './App.scss'
 
 function App() {
   return (
     <div className="app">
-      <Header />  
+      <Header />
+      <AboutSection />
     </div>
   )
 }

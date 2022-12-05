@@ -1,5 +1,4 @@
-import About from '../About/About'
-import MainSkills from '../MainSkills/ MainSkills'
+import SocialMedias from '../SocialMedias/SocialMedias'
 
 import styles from './Header.module.scss'
 
@@ -8,15 +7,18 @@ import { skills } from '../../data'
 
 const Header = () => {
   return (
-    <div className={styles.header}>
-      <div className={styles.text}>
-        <About 
-          title='Hi, I am Maria' 
-          text='A Front-end Developer from Brazil with 4 years of experience in web development.'
-        />
-        <MainSkills skills={skills} />
+    <header className={styles.header}>
+      <div className={styles.container}>
+        <div className={styles.aboutContent}>
+          <div className={styles.about}>
+            <h1>Hi, I am <span className={styles.name}>Maria</span></h1>
+            <p>A Front-end Developer from Brazil with 4 years of experience in web development.</p>
+            <button className={styles.button}>Contact Me</button>
+          </div>
+          <SocialMedias />
+        </div>
       </div>
-    </div>
+    </header>
   )
 }
 

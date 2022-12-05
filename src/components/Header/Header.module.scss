@@ -1,10 +1,39 @@
 @import '../../styles/_colors.scss';
 
 .header {
-  padding-top: 10%;
-  width: 100%;
+  background-color: $light-color;
 }
 
-.text {
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.aboutContent {
+  padding: 10% 0 5% 5%;
   max-width: 30%;
+}
+
+.about {
+  margin-bottom: 30px;
+}
+
+.name {
+  color: $base-color;
+}
+
+.button {
+  border-radius: 30px;
+  background-color: $secondary-color;
+  color: white;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: $secondary-color-dark;
+  }
+
+  &:focus,
+  button:focus-visible {
+    outline: 4px auto $secondary-color-dark;
+  };
 }

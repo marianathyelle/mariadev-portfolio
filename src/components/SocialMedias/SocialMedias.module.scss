@@ -1,0 +1,11 @@
+@import '../../styles/colors';
+
+.link {
+  margin: 0 10px;
+  color: $base-color;
+  transition: 0.3s;
+
+  &:hover {
+    color: $secondary-color;
+  }
+}
