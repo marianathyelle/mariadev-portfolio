@@ -1,8 +1,8 @@
 import SocialMedias from '../SocialMedias/SocialMedias'
 
-import styles from './Header.module.scss'
+import Avatar from '../../assets/maria.png'
 
-import { skills } from '../../data'
+import styles from './Header.module.scss'
 
 
 const Header = () => {
@@ -16,6 +16,10 @@ const Header = () => {
             <button className={styles.button}>Contact Me</button>
           </div>
           <SocialMedias />
+        </div>
+        <div className={styles.avatarContainer}>
+          <div className={styles.block}/>
+          <img src={Avatar} alt='A picture of Maria' className={styles.avatar}/>
         </div>
       </div>
     </header>

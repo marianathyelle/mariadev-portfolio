@@ -7,11 +7,19 @@
 .container {
   max-width: 1280px;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
 }
 
 .aboutContent {
   padding: 10% 0 5% 5%;
   max-width: 30%;
+
+  @media screen and (max-width: 495px) {
+    max-width: 100%;
+    text-align: center;
+    padding: 10% 5%;
+  }
 }
 
 .about {
@@ -36,4 +44,29 @@
   button:focus-visible {
     outline: 4px auto $secondary-color-dark;
   };
+}
+
+.avatarContainer {
+  width: 80%;
+  max-width: 80%;
+  padding-left: 5%;
+  display: flex;
+  justify-content: center;
+
+  @media screen and (max-width: 495px) {
+    display: none;
+  }
+}
+
+.avatar {
+  width: 300px;
+  height: auto;
+
+  &::after {
+    content: "";
+  }
+
+  @media screen and (max-width: 495px) {
+    display: none;
+  }
 }
