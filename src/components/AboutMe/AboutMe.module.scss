@@ -4,7 +4,15 @@
   width: 50%;
   max-width: 50%;
   padding: 5%;
+  box-sizing: border-box;
   box-shadow: rgba($light-color, 0.2) 0px 7px 29px 0px;
+
+  @media screen and (max-width: 495px) {
+    width: 100%;
+    max-width: 100%;
+    background-color: $base-color;
+    color: $light-color;
+  }
 }
 
 .title {
@@ -12,4 +20,19 @@
   font-weight: 500;
   color: $secondary-color;
   margin: 0 0 40px 0;
+  position: relative;
+  width: fit-content;
+
+  &::after {
+    content: "";
+    border: 2px solid $base-color;
+    position: absolute;
+    width: 50%;
+    bottom: -70%;
+    left: 0;
+
+    @media screen and (max-width: 495px) {
+      display: none;
+    }
+  }
 }

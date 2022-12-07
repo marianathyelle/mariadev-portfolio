@@ -18,7 +18,6 @@ const Header = () => {
           <SocialMedias />
         </div>
         <div className={styles.avatarContainer}>
-          <div className={styles.block}/>
           <img src={Avatar} alt='A picture of Maria' className={styles.avatar}/>
         </div>
       </div>

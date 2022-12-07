@@ -12,7 +12,15 @@ const Skills = () => {
         <Skill name='Javascript' yearsQtd={4} />
         <Skill name='Typescript' yearsQtd={2} />
         <Skill name='React.JS' yearsQtd={4} />
+        <Skill name='Context API' yearsQtd={4} />
+        <Skill name='Redux/Redux-Saga' yearsQtd={4} />
+        <Skill name='Styled Components' yearsQtd={3} />
+        <Skill name='React Native' yearsQtd={1} />
+        <Skill name='Rest API' yearsQtd={4} />
         <Skill name='Git' yearsQtd={4} />
+        <Skill name='SASS/SCSS' yearsQtd={4} />
+        <Skill name='Node.js' yearsQtd={1} />
+        <Skill name='Agile Development (Scrum)' yearsQtd={4} />
       </div>
     </div>
   )
