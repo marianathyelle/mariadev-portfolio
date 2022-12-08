@@ -13,7 +13,9 @@ const Header = () => {
           <div className={styles.about}>
             <h1>Hi, I am <span className={styles.name}>Maria</span></h1>
             <p>A Front-end Developer from Brazil with 4 years of experience in web development.</p>
-            <button className={styles.button}>Contact Me</button>
+            <a className={styles.emailLink} href="mailto:nathyellemonteiro19@gmail.com">
+              Contact Me
+            </a>
           </div>
           <SocialMedias />
         </div>
