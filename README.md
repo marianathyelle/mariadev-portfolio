@@ -2,7 +2,7 @@
 # Maria-Dev Portfolio   
 
 
-Just a simple website to tell a little bit more about myself and some of my skills.
+Just a simple site to tell a little bit more about myself and some of my skills.
 
 
 ## Authors
@@ -15,13 +15,13 @@ Just a simple website to tell a little bit more about myself and some of my skil
 Clone the project
 
 ```bash
-  git clone https://github.com/marianathyelle/mariadev-portfolio.git
+  git clone https://github.com/marianathyelle/marianathyelle.github.io.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd mariadev-portfolio
+  cd marianathyelle.github.io
 ```
 
 Install dependencies
