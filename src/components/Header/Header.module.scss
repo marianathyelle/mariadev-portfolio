@@ -1,3 +1,4 @@
+@use '../../styles/animations';
 @import '../../styles/_colors.scss';
 
 .header {
@@ -26,6 +27,10 @@
   margin-bottom: 30px;
 }
 
+.title {
+  @include animations.fadeInLeft-animation;
+}
+
 .name {
   color: $base-color;
 }
@@ -38,6 +43,7 @@
   background-color: $secondary-color;
   color: white;
   transition: 0.3s;
+  @include animations.fadeInUp-animation;
 
   &:hover {
     background-color: $secondary-color-dark;
@@ -64,6 +70,7 @@
 .avatar {
   width: 300px;
   height: auto;
+  @include animations.fadeInRight-animation;
 
   &::after {
     content: "";

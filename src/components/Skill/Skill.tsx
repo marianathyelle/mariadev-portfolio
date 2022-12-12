@@ -7,14 +7,14 @@ interface SkillProps {
 
 const Skill = ({ name, yearsQtd }: SkillProps) => {
 
-  const renderYearsSquares = ():JSX.Element[] => {
-    const squares: JSX.Element[] = []
+  const renderYearsDots = ():JSX.Element[] => {
+    const dots: JSX.Element[] = []
 
     for (let i = 0; i < yearsQtd; i++) {
-      squares.push(<span key={name + i} />)
+      dots.push(<span key={name + i} className={styles['dot' + (i + 1)]}/>)
     }
 
-    return squares
+    return dots
   }
 
   return (
@@ -23,7 +23,7 @@ const Skill = ({ name, yearsQtd }: SkillProps) => {
       <div className={styles.progressContainer}>
         <span className={styles.progressLabel}>{yearsQtd} y</span>
         <div className={styles.progress}>
-          {renderYearsSquares()}
+          {renderYearsDots()}
         </div>
       </div>
     </div>

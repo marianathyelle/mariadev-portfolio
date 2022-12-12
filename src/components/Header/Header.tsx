@@ -11,7 +11,7 @@ const Header = () => {
       <div className={styles.container}>
         <div className={styles.aboutContent}>
           <div className={styles.about}>
-            <h1>Hi, I am <span className={styles.name}>Maria</span></h1>
+            <h1 className={styles.title}>Hi, I am <span className={styles.name}>Maria</span></h1>
             <p>A Front-end Developer with 4 years of experience in web development.</p>
             <a className={styles.emailLink} href="mailto:nathyellemonteiro19@gmail.com">
               Contact Me

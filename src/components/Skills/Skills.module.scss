@@ -1,3 +1,4 @@
+@use '../../styles/animations';
 @import '../../styles/colors';
 
 .content {
@@ -27,6 +28,7 @@
     width: 50%;
     bottom: -70%;
     left: 0;
+    @include animations.horizontal-bar;
   } 
 }
 
